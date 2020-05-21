@@ -15,4 +15,4 @@ async def ping(ctx):
 async def heehoo(ctx):
     await ctx.send("Super command yo - It's a secret to everybody!")
   
-client.run("NzEwMzg2NzEyMDYwMzYyODAy.XsZHHQ.uLIh5kJ8EMoY9dnDS_MzTiJwwE0")
+client.run("<token>")

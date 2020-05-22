@@ -6,6 +6,7 @@ client = commands.Bot(command_prefix = "s!")
 @client.event
 async def on_ready():
     print("Spark, active!")
+    print("Logged in as:", client.user.name, "(", client.user.id, ")")
 
 @client.command()
 async def ping(ctx):

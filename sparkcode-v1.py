@@ -19,5 +19,7 @@ async def about(ctx):
 @client.command(name="secret",hidden=True)
 async def heehoo(ctx):
     await ctx.send("Super command yo - It's a secret to everybody!")
-  
-client.run("<token>")
+
+tokenfile = open("./token.txt")
+token = tokenfile.read()
+client.run(token)

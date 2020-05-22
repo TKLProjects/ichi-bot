@@ -7,14 +7,15 @@ client = commands.Bot(command_prefix = "s!")
 async def on_ready():
     print("Spark, active!")
     print("Logged in as:", client.user.name, "(", client.user.id, ")")
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="test"))
 
 @client.command()
 async def ping(ctx):
     await ctx.send("Pong!")
-
+    
 @client.command()
 async def about(ctx):
-    await ctx.send("```SparkBot™, by the loud-mouthed guy with little knowledge in programming - A.K.A Ichiki Hayaite#1111, special thanks to Lexi#2249.```")
+    await ctx.send("```SparkBot™, by the loud-mouthed guy with little knowledge in programming - A.K.A Ichiki Hayaite#1111!\n\n\nSpecial thanks to Lexi#2249.```")
 
 @client.command(name="secret",hidden=True)
 async def heehoo(ctx):

@@ -21,12 +21,12 @@ async def on_ready():
 
 @client.command()
 async def ping(ctx):
-"""Test the bot's skills on ping-pong."""
+    """Test the bot's skills on ping-pong."""
     await ctx.send("Pong!")
     
 @client.command()
 async def about(ctx):
-"""Learn more about this bot."""
+    """Learn more about this bot."""
     await ctx.send("```SparkBot™, a small quarantine project created by the loud-mouthed, purple-haired guy with little knowledge in programming - A.K.A Ichiki Hayaite#1111!\n\nSpecial thanks to Lexi#2249!```")
 
 @client.command(name="secret",hidden=True)

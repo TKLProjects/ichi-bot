@@ -4,7 +4,7 @@ import asyncio
 
 client = commands.Bot(command_prefix = "s!")
 
-async def status.task():
+async def status_task():
     while True:
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="Izumi and Kazuki sparring! (s!help)"))
     await asyncio.sleep(30)

@@ -10,7 +10,7 @@ python:
 
 before_install:
     - git remote remove origin
-    - git remote add origin https://$KEANU_TOKEN@github.com/$GHREPO.git
+    - git remote add origin https://$KEANU_TOKEN@github.com/TKLProjects/$GHREPO.git
 
 install:
     - pip install --upgrade autopep8

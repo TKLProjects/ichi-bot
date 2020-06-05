@@ -19,7 +19,7 @@ install:
 script:
     - git config --global user.email "hondzee69@gmail.com"
     - git config --global user.name "TravBot"
-    - autopep8 --in-place --aggressive --aggressive main.py
+    - autopep8 --in-place --aggressive --aggressive *.py
     - git add .
     - git commit --message "Travis beautify build $TRAVIS_BUILD_NUMBER" || true
     - git push --set-upstream origin HEAD:$TRAVIS_BRANCH
